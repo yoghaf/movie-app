@@ -17,6 +17,7 @@
     "babel-loader": "^9.1.2",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.3",
+    "dotenv-webpack": "^8.0.1",
     "eslint": "^8.36.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.27.5",
@@ -28,6 +29,7 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
+    "node-polyfill-webpack-plugin": "^2.0.1",
     "regenerator-runtime": "^0.13.11"
   }
 }

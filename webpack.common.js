@@ -1,6 +1,8 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const Dotenv = require("dotenv-webpack");
 const path = require("path");
+const NodePolyfillPlugin = require("node-polyfill-webpack-plugin");
 
 module.exports = {
   entry: {
@@ -40,5 +42,15 @@ module.exports = {
         },
       ],
     }),
+    new Dotenv(),
+    new NodePolyfillPlugin(),
   ],
+
+  resolve: {
+    fallback: {
+      path: require.resolve("path-browserify"),
+      os: require.resolve("os-browserify/browser"),
+      fs: false,
+    },
+  },
 };
