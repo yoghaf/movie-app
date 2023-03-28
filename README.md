@@ -18,6 +18,8 @@ Clone repository ini ke komputer Anda.
 Buka terminal dan navigasi ke direktori repo.
 Jalankan perintah npm install untuk menginstal dependencies.
 Jalankan perintah npm start untuk memulai server.
+![image](https://user-images.githubusercontent.com/60768021/228136659-2e2d8499-9942-48ba-b9db-c49b3718960d.png)
+
 
 Catatan
 
